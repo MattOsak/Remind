@@ -21,5 +21,15 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func onTimerTapped(_ sender: Any) {
+    }
+    
+    
+    @IBAction func onDateTapped(_ sender: Any) {
+    }
+    
+    @IBAction func onLocationTapped(_ sender: Any) {
+    }
+    
 }
 

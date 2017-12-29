@@ -12,6 +12,10 @@
 		C99231CE1FF5B63100FC4AC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99231CC1FF5B63100FC4AC7 /* Main.storyboard */; };
 		C99231D01FF5B63100FC4AC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99231CF1FF5B63100FC4AC7 /* Assets.xcassets */; };
 		C99231D31FF5B63100FC4AC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99231D11FF5B63100FC4AC7 /* LaunchScreen.storyboard */; };
+		C99231E01FF5B92400FC4AC7 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99231DF1FF5B92400FC4AC7 /* ShadowView.swift */; };
+		C99231E41FF5BC7E00FC4AC7 /* LocationAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = C99231E11FF5BC7D00FC4AC7 /* LocationAlert.png */; };
+		C99231E51FF5BC7E00FC4AC7 /* DateAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = C99231E21FF5BC7E00FC4AC7 /* DateAlert.png */; };
+		C99231E61FF5BC7E00FC4AC7 /* TimeAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = C99231E31FF5BC7E00FC4AC7 /* TimeAlert.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		C99231CF1FF5B63100FC4AC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C99231D21FF5B63100FC4AC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C99231D41FF5B63100FC4AC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C99231DF1FF5B92400FC4AC7 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		C99231E11FF5BC7D00FC4AC7 /* LocationAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationAlert.png; sourceTree = "<group>"; };
+		C99231E21FF5BC7E00FC4AC7 /* DateAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateAlert.png; sourceTree = "<group>"; };
+		C99231E31FF5BC7E00FC4AC7 /* TimeAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeAlert.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		C99231C71FF5B63100FC4AC7 /* Remind */ = {
 			isa = PBXGroup;
 			children = (
-				C99231C81FF5B63100FC4AC7 /* AppDelegate.swift */,
-				C99231CA1FF5B63100FC4AC7 /* ViewController.swift */,
-				C99231CC1FF5B63100FC4AC7 /* Main.storyboard */,
-				C99231CF1FF5B63100FC4AC7 /* Assets.xcassets */,
-				C99231D11FF5B63100FC4AC7 /* LaunchScreen.storyboard */,
 				C99231D41FF5B63100FC4AC7 /* Info.plist */,
+				C99231DA1FF5B80100FC4AC7 /* Model */,
+				C99231DB1FF5B81400FC4AC7 /* View */,
+				C99231DC1FF5B84C00FC4AC7 /* Controller */,
+				C99231DD1FF5B85F00FC4AC7 /* Service */,
 			);
 			path = Remind;
+			sourceTree = "<group>";
+		};
+		C99231DA1FF5B80100FC4AC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C99231DB1FF5B81400FC4AC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C99231CF1FF5B63100FC4AC7 /* Assets.xcassets */,
+				C99231D11FF5B63100FC4AC7 /* LaunchScreen.storyboard */,
+				C99231CC1FF5B63100FC4AC7 /* Main.storyboard */,
+				C99231DF1FF5B92400FC4AC7 /* ShadowView.swift */,
+				C99231DE1FF5B89F00FC4AC7 /* NotificationsAssets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C99231DC1FF5B84C00FC4AC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C99231C81FF5B63100FC4AC7 /* AppDelegate.swift */,
+				C99231CA1FF5B63100FC4AC7 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C99231DD1FF5B85F00FC4AC7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C99231DE1FF5B89F00FC4AC7 /* NotificationsAssets */ = {
+			isa = PBXGroup;
+			children = (
+				C99231E21FF5BC7E00FC4AC7 /* DateAlert.png */,
+				C99231E11FF5BC7D00FC4AC7 /* LocationAlert.png */,
+				C99231E31FF5BC7E00FC4AC7 /* TimeAlert.png */,
+			);
+			path = NotificationsAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +176,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C99231D31FF5B63100FC4AC7 /* LaunchScreen.storyboard in Resources */,
+				C99231E51FF5BC7E00FC4AC7 /* DateAlert.png in Resources */,
+				C99231E41FF5BC7E00FC4AC7 /* LocationAlert.png in Resources */,
 				C99231D01FF5B63100FC4AC7 /* Assets.xcassets in Resources */,
 				C99231CE1FF5B63100FC4AC7 /* Main.storyboard in Resources */,
+				C99231E61FF5BC7E00FC4AC7 /* TimeAlert.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99231E01FF5B92400FC4AC7 /* ShadowView.swift in Sources */,
 				C99231CB1FF5B63100FC4AC7 /* ViewController.swift in Sources */,
 				C99231C91FF5B63100FC4AC7 /* AppDelegate.swift in Sources */,
 			);
